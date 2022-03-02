@@ -5,7 +5,8 @@ setup(
     version='0.0.1',
     author="Your name here",
     author_email="your@email.com",
-    # packages=["simple_pip_module"],
+    url='https://yourwebsite.com',
+    description='Your description here, e.g. from readme',
     packages=find_packages(
         where='src',
         include=["simple*"],
@@ -15,4 +16,8 @@ setup(
     install_requires=[
         # dependencies here
     ],
+    extras_require={
+        # For special installation via pip install simple-pip-example[dev]
+        'dev': 'black'
+    }
 )

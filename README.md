@@ -31,3 +31,10 @@ print(simple_extra_module)
 # If you do this it will fail as it was excluded in setup.py
 import simple_hidden_module
 ```
+
+## Special installs
+
+You can install extra requirements (`extras_require` in setup.py) with bracket:
+```
+pip install simple-pip-example[dev]
+```
