@@ -10,11 +10,24 @@ pip install git+https://github.com/xhlulu/simple-pip-example
 then in python:
 
 ```python
-import simple_pip_library
+# The following were included in setup.py
+import simple_pip_module
+import simple_extra_module
 
-print(simple_pip_library.add_numbers(1, 5))
+print(simple_pip_module.add_numbers(1, 5))
 # => 6
 
-my_obj = simple_pip_library.SimpleClass(x=10)
+my_obj = simple_pip_module.SimpleClass(x=10)
 print(my_obj.x)
 # => 10
+
+print(simple_extra_module.maybe_useful_to_user())
+# => "I'm trying to help"
+
+# Let's see where those modules are located
+print(simple_pip_module)
+print(simple_extra_module)
+
+# If you do this it will fail as it was excluded in setup.py
+import simple_hidden_module
+```
