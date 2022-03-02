@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mypackage',
+    name='simple-pip-example',
     version='0.0.1',
     author="Your name here",
     author_email="your@email.com",
