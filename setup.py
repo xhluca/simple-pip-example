@@ -17,7 +17,7 @@ setup(
         # dependencies here
     ],
     extras_require={
-        # For special installation via pip install simple-pip-example[dev]
-        'dev': 'black'
+        # For special installation, e.g. pip install simple-pip-example[dev]
+        'dev': ['black']
     }
 )
