@@ -9,7 +9,7 @@ setup(
     packages=find_packages(
         where='src',
         include=["simple*"],
-        exclude=['additional'],
+        exclude=['simple_hidden*'],
     ),
     package_dir={"": "src"},
     install_requires=[
