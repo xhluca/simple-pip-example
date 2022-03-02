@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     author="Your name here",
     author_email="your@email.com",
-    packages=find_packages(),
+    packages=["simple_pip_module"],
     # packages=find_packages(
     #     where='src',
     #     include=["simple*"],
