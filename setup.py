@@ -7,6 +7,7 @@ setup(
     author_email="your@email.com",
     packages=find_packages(
         where='src',
+        include=["simple*"],
         exclude=['additional'],
     ),
     package_dir={"": "src"},
